@@ -7,7 +7,10 @@ const canvas = document.getElementById('grafico')
 
 const oms = async (e) => {
     e.preventDefault()
-    saludar()
+
+  
+
+
     const country = pais.value
     const type = tipo.value
     const url = `https://api.api-ninjas.com/v1/covid19?country=${country}&type=${type}`
