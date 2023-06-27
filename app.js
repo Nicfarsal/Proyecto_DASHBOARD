@@ -7,7 +7,6 @@ const canvas = document.getElementById('grafico')
 
 const oms = async (e) => {
     e.preventDefault()
-    const nicolas = 'error'
     const country = pais.value
     const type = tipo.value
     const url = `https://api.api-ninjas.com/v1/covid19?country=${country}&type=${type}`
@@ -43,6 +42,10 @@ crearGrafico(dataGrafico);
 
 }
 boton.addEventListener('click', oms)
+const  saludar =  () =>{
+    console.log('hola')
+
+}
 let grafico;
 const crearGrafico = (data) => {
     if(grafico){
