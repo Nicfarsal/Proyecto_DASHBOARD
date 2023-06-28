@@ -1,3 +1,5 @@
+
+
 const container = document.getElementById('container')
 const pais = document.getElementById('inputPais')
 const boton = document.getElementById('boton')
@@ -8,7 +10,7 @@ const canvas = document.getElementById('grafico')
 const oms = async (e) => {
     e.preventDefault()
 
-  
+
 
 
     const country = pais.value
@@ -49,20 +51,4 @@ boton.addEventListener('click', oms)
 const  saludar =  () =>{
     console.log('hola')
 
-}
-let grafico;
-const crearGrafico = (data) => {
-    if(grafico){
-        grafico.destroy()
-    }
- grafico = new Chart(canvas, {
-        type: 'bar',
-        data: {
-            labels: data.fechas,
-            datasets: [{
-                label: data.type,
-                data: data.info
-            }]
-        }
-    })
 }
