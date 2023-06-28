@@ -1,4 +1,4 @@
-import {crearGrafico} from "./createGraph"
+import {crearGrafico} from "./createGraph.js"
 
 const container = document.getElementById('container')
 const pais = document.getElementById('inputPais')
