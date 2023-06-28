@@ -1,18 +1,13 @@
-
+import {crearGrafico} from "./createGraph"
 
 const container = document.getElementById('container')
 const pais = document.getElementById('inputPais')
 const boton = document.getElementById('boton')
 const formulario = document.getElementById('formulario')
 const tipo = document.getElementById('tipo')
-const canvas = document.getElementById('grafico')
 
 const oms = async (e) => {
     e.preventDefault()
-
-
-
-
     const country = pais.value
     const type = tipo.value
     const url = `https://api.api-ninjas.com/v1/covid19?country=${country}&type=${type}`
@@ -23,32 +18,33 @@ const oms = async (e) => {
     })
 
     console.log(data)
-    let dataGrafico ={}
+    let dataGrafico = {}
 
-    if(type === 'cases'){
+    if (type === 'cases') {
         const fechas = Object.keys(data[0].cases);
-    const info = Object.values(data[0].cases).map((elemento) => elemento.total);
-    dataGrafico = {
-        fechas,
-        info,
-        type,
-    };
+        const info = Object.values(data[0].cases).map((elemento) => elemento.total);
+        dataGrafico = {
+            fechas,
+            info,
+            type,
+        };
     }
-    else if(type === 'deaths'){
+    else if (type === 'deaths') {
         const fechas = Object.keys(data[0].deaths);
-    const info = Object.values(data[0].deaths).map((elemento) => elemento.total);
-     dataGrafico = {
-        fechas,
-        info,
-        type,
-    };
+        const info = Object.values(data[0].deaths).map((elemento) => elemento.total);
+        dataGrafico = {
+            fechas,
+            info,
+            type,
+        };
     }
 
-crearGrafico(dataGrafico);
+    crearGrafico(dataGrafico);
 
 }
 boton.addEventListener('click', oms)
-const  saludar =  () =>{
+const saludar = (e) => {
+    e.preventDefault()
     console.log('hola')
 
 }

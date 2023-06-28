@@ -1,9 +1,9 @@
 {
-  "name": "prueba2",
+  "name": "proyecto_dashboard",
   "version": "1.0.0",
-  "description": "---\r ## Datos COVID-19",
+  "description": "--- ## Datos COVID-19",
   "main": "app.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
