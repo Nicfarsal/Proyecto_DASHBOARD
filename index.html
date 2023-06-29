@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-<form id="formulario">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/styles.css">
 
-    <input id="inputPais" type="text">
-<select id="tipo">
-<option value="cases">casos</option>
-<option value="deaths">muertes</option>
-</select>
-    <button id="boton">VER</button>
-</form>
-<div id="container">
-    <canvas id="grafico"></canvas>
-</div>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="/servicios.html">Servicios</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#foot">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="content container">
+        <h1>COVID-19: Información y Prevención</h1>
+
+        <h2>Prevención de contagios</h2>
+        <ul>
+            <li>Lávate las manos con frecuencia y usa mascarillas faciales en espacios públicos.</li>
+            <li>Mantén una distancia de al menos 1 metro (3 pies) y evita aglomeraciones.</li>
+        </ul>
+
+        <h2>Recopilación de estadísticas del COVID-19</h2>
+        <p>Las estadísticas del COVID-19 se recopilan a partir de datos obtenidos de laboratorios, hospitales y
+            autoridades sanitarias. Estos datos ayudan a monitorear la propagación del virus, casos confirmados,
+            hospitalizaciones y defunciones.</p>
+
+        <p>Sigue las recomendaciones de las autoridades sanitarias para protegerte y proteger a los demás del COVID-19.
+        </p>
+    </div>
+    <div class="container">
+        <form id="formulario">
+            <input id="inputPais" type="text">
+            <select id="tipo">
+                <option value="cases">casos</option>
+                <option value="deaths">muertes</option>
+            </select>
+            <button id="boton" class="btn btn-primary">VER</button>
+        </form>
+    </div>
+
+
+    <div id="container">
+        <canvas id="grafico"></canvas>
+    </div>
+
+    <footer class="footer" id="foot">
+        <div class="footer-logos">
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+            <img src="logo3.png" alt="Logo 3">
+            <img src="logo4.png" alt="Logo 4">
+        </div>
+        <p>Derechos de autor © 2023 | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js" type="module"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="app.js" type="module"></script>
+
 </html>

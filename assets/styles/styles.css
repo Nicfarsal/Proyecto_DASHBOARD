@@ -1,0 +1,82 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #F6BDC0;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: #7DB9E8;
+    text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    color: #333;
+}
+
+.content p {
+    color: #555;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #F6BDC0;
+    color: #7DB9E8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
+
+#grafico {
+    width: 100%;
+}
