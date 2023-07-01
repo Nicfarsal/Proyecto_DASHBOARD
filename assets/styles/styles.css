@@ -180,6 +180,12 @@ font-weight: 559;
     width:10px;
     display: inline;
 }
+.container{
+   background-image: url(/img/img_covid\ transparente.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
 
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 480px) {
