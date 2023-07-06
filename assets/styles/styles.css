@@ -135,6 +135,7 @@ body {
 .parrafoImpacto {
 
     text-align: justify;
+    margin: 0% 20%;
     line-height: 28px;
     font-size: 22px;
     font-family: 'Edu NSW ACT Foundation', cursive;
@@ -207,9 +208,20 @@ body {
     }
 
     .navbar li {
-        display: block;
+        /*display: block;*/
         margin-bottom: 5px;
     }
+
+    .navbar a {
+        color: #f4f7f9;
+        text-decoration: none;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+.navbar img {
+    width: 15%;
+}
 
     .footer {
         padding: 10px;
