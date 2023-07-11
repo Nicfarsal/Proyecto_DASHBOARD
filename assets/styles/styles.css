@@ -91,7 +91,7 @@ body {
 }
 
 .divImpacto{
-   background-image: url(/img/img_covid\ transparente.jpg);
+   background-image: url(../../img/img_covid\ transparente.jpg);
    background-repeat: no-repeat ;
    background-size: cover;
     width: 100%;
