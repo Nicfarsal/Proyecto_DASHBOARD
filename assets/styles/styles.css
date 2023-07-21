@@ -201,6 +201,40 @@ body {
    
 }
 
+#grafico{
+    max-width: 80rem;
+    height: auto;
+        
+    }
+    .container-graf{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    #formulario{
+        height: 50px;
+    }
+    #inputPais{
+        height: 30px;
+        border-radius: 30px;
+        border: solid #5aa9ad;
+    }
+    #tipo{
+        height: 35px;
+        border: solid #5aa9ad;
+        border-radius: 30px;
+    }
+    #boton{
+        height: 35px;
+        width: 80px;
+        border-radius: 30px;
+        background-color: #7ac0e5;
+        border: solid #7ac0e5; ;
+    }
+
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 480px) {
     .navbar {
@@ -228,6 +262,3 @@ body {
     }
 }
 
-#grafico {
-    width: 100%;
-}
